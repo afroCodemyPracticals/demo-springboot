@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage("Clone Code") {
             steps {
-                git branch: 'main', credentialsId: 'enter-your-credentialsId', url: 'enter-your-repository-url'
+                git branch: 'main', credentialsId: 'github_Maria', url: 'https://github.com/afroCodemyPracticals/demo-springboot.git'
             }
         }
         stage("Build Code") {
