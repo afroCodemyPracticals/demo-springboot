@@ -22,7 +22,7 @@ pipeline {
 
                     sh "sudo cp ${jarFile} ${destinationDir}/"
 
-                    sh 'sudo systemctl restart springboot-demo.jar'
+                    sh 'sudo systemctl restart springboot-demo.service'
                 }
             }
         }
